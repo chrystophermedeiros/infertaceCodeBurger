@@ -1,11 +1,13 @@
 import styled from 'styled-components'
 
 import Fundo from '../../assets/background.svg'
+import LoginImg from '../../assets/login-image-mobile.svg'
 
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
   background: url('${Fundo}');
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +15,9 @@ export const Container = styled.div`
 
 export const LoginImage = styled.img`
   height: 70%;
+  @media (max-width: 994px) {
+    display: none;
+  }
 `
 
 export const ContainerItens = styled.div`
@@ -23,6 +28,12 @@ export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 994px) {
+    background: url('${LoginImg}');
+    background-size: cover;
+    width: 100%;
+  }
 
   h1 {
     margin-top: 20px;
@@ -49,7 +60,7 @@ export const Label = styled.p`
 `
 export const Input = styled.input`
   margin-bottom: 10px;
-  width: 391.42px;
+  width: 100%;
   height: 38.32px;
   background: #ffffff;
   box-shadow: 3px 3px 10px rgba(74, 144, 226, 0.19);
