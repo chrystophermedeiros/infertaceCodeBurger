@@ -4,7 +4,7 @@ import Fundo from '../../assets/background.svg'
 import LoginImg from '../../assets/login-image-mobile.svg'
 
 export const Container = styled.div`
-  height: 100vmax;
+  height: 100dvh;
   width: 100%;
   background: url('${Fundo}');
   background-size: cover;
@@ -35,7 +35,7 @@ export const ContainerItens = styled.div`
   @media (max-width: 994px) {
     background: url('${LoginImg}');
     background-size: cover;
-    height: 70%;
+    height: 70dvh;
     padding: 25px 25px;
   }
 
