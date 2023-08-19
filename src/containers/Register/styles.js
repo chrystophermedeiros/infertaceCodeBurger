@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 import Fundo from '../../assets/background.svg'
-import RegisterImg from '../../assets/register-image.svg'
+import RegisterImg from '../../assets/register-image-mobile.svg'
 
 export const Container = styled.div`
   height: 100dvh;
