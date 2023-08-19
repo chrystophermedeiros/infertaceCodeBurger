@@ -6,8 +6,7 @@ export const Container = styled.div`
 `
 
 export const ProductImg = styled.img`
-  width: 100vw; /* 100% da largura da tela */
-  height: 50vh;
+  width: 100%; /* 100% da largura da tela */
   object-fit: cover;
   object-position: bottom;
 `
@@ -17,6 +16,11 @@ export const CategoriesMenu = styled.div`
   justify-content: center;
   gap: 50px;
   margin-top: 20px;
+  @media (max-width: 700px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+  }
 `
 
 export const CategoryButton = styled.button`
@@ -31,13 +35,19 @@ export const CategoryButton = styled.button`
   border-bottom: ${props => props.isActiveCategory && '2px solid #9758A6'};
   padding-bottom: 3px;
   color: ${props => (props.isActiveCategory ? '#9758A6' : '#9A9A9D')};
+  @media (max-width: 700px) {
+    border-width: 1px;
+  }
 `
 
 export const ProductdContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  @media (max-width: 700px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
   gap: 10px;
   padding: 40px;
   justify-items: center;
-  background-color: black;
+  background-color: #0d0d10;
 `
