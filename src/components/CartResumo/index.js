@@ -9,16 +9,21 @@ import { Container } from './styles'
 
 export function CartResumo() {
   const [finalprice, setFinalPrice] = useState(0)
+  const [quantityIten, setQuantityItens] = useState(0)
   const [deliveryTax] = useState(5)
 
   const { cartProducts } = useCart()
 
   useEffect(() => {
+    let totalQuantity = 0
+
     const sumAllItems = cartProducts.reduce((acc, current) => {
+      totalQuantity += current.quantity
       return current.price * current.quantity + acc
     }, 0)
 
     setFinalPrice(sumAllItems)
+    setQuantityItens(totalQuantity)
   }, [cartProducts])
 
   const submitOrder = async () => {
@@ -37,11 +42,11 @@ export function CartResumo() {
     <div>
       <Container>
         <div className="container-top">
-          <h2 className="title">Resumo do pedido</h2>
-          <p className="itens">Itens:</p>
-          <p className="itens-price">{formatCurrency(finalprice)}</p>
-          <p className="delivery-taxa">Taxa de entrega:</p>
-          <p className="delivery-taxa-price">{formatCurrency(deliveryTax)}</p>
+          <h2>Resumo do pedido</h2>
+          <p>Itens: {quantityIten}</p>
+          <p>valor: {formatCurrency(finalprice)}</p>
+          <p></p>
+          <p>Taxa de entrega: {formatCurrency(deliveryTax)}</p>
         </div>
         <div className="container-button">
           <p className="total">Total</p>
@@ -49,13 +54,13 @@ export function CartResumo() {
             {formatCurrency(finalprice + deliveryTax)}
           </p>
         </div>
+        <Button
+          onClick={submitOrder}
+          style={{ width: '80%', marginTop: '30px' }}
+        >
+          Finalizar pedido
+        </Button>
       </Container>
-      <Button
-        onClick={submitOrder}
-        style={{ width: '100%', marginTop: '30px' }}
-      >
-        Finalizar pedido
-      </Button>
     </div>
   )
 }

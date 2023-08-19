@@ -2,10 +2,12 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: #0d0d10;
-  min-height: 100vh;
   width: max-content;
   border-radius: 20px;
   padding: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
 
   p {
     color: white;
@@ -17,11 +19,18 @@ export const Container = styled.div`
   }
 
   .logo-lixeira {
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     justify-self: center;
     cursor: pointer;
   }
+  .cardResumo {
+    height: 500px;
+  }
+`
+export const CartItens = styled.div`
+  flex-grow: 1;
+  overflow: auto;
 `
 
 export const Header = styled.div`
