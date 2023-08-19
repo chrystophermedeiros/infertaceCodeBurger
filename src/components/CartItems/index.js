@@ -3,6 +3,7 @@ import React from 'react'
 import ImgLixeira from '../../assets/lixeira.png'
 import { useCart } from '../../hooks/CartContext'
 import formatCurrency from '../../utils/formatCurrency'
+import { CartResumo } from '../CartResumo'
 import { Container, Header, Body, EmptyCart } from './styles'
 
 export function CartItems() {
@@ -42,6 +43,7 @@ export function CartItems() {
       ) : (
         <EmptyCart>Carrinho Vazio</EmptyCart>
       )}
+      <CartResumo />
     </Container>
   )
 }
