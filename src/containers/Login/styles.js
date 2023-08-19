@@ -12,9 +12,6 @@ export const Container = styled.div`
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  @media (max-width: 994px) {
-    max-height: max-content;
-  }
 `
 
 export const LoginImage = styled.img`

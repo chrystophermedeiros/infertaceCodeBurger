@@ -11,6 +11,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 `
 
 export const RegisterImage = styled.img`
@@ -31,9 +32,8 @@ export const ContainerItens = styled.div`
   @media (max-width: 994px) {
     background: url('${RegisterImg}');
     background-size: cover;
-    width: 100%;
-    height: 90%;
-    color: black;
+    width: 95%;
+    padding: 25px 25px;
   }
 
   h1 {
@@ -52,7 +52,10 @@ export const ContainerItens = styled.div`
   }
 
   img {
-    height: 10%;
+    height: 20%;
+    @media (max-width: 994px) {
+      height: 100%;
+    }
   }
 `
 export const Label = styled.p`
@@ -81,6 +84,10 @@ export const SingInLink = styled.p`
   font-size: 14px;
   line-height: 16px;
   color: #ffffff;
+
+  @media (max-width: 994px) {
+    color: black;
+  }
   a {
     cursor: pointer;
     text-decoration: underline;
