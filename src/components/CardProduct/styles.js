@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   display: flex;
   gap: 12px;
-  padding: 8px;
+  padding: 16px;
   border: 2px solid #9758a6;
   border-radius: 40px;
 
@@ -23,8 +23,8 @@ export const Image = styled.img`
   height: 180px;
   border-radius: 10px;
   @media (max-width: 700px) {
-    width: 150px;
-    height: 150px;
+    width: 120px;
+    height: 120px;
   }
 `
 export const Name = styled.p`
