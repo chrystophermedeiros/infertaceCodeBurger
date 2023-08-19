@@ -88,13 +88,13 @@ export function Login() {
           <ErroMessage>{errors.password?.message}</ErroMessage>
 
           <Button type="submit" style={{ marginTop: 55, marginBottom: 55 }}>
-            Sign In
+            Entrar
           </Button>
         </form>
         <SingInLink>
           Não possui conta?{' '}
           <Link style={{ color: 'white' }} to="/cadastro">
-            Sign Up
+            Registrar
           </Link>
         </SingInLink>
       </ContainerItens>

@@ -15,7 +15,7 @@ export const Container = styled.div`
 `
 
 export const LoginImage = styled.img`
-  height: 70%;
+  height: 80%;
 
   @media (max-width: 994px) {
     display: none;
@@ -25,7 +25,7 @@ export const LoginImage = styled.img`
 export const ContainerItens = styled.div`
   background: black;
   border-radius: 0 10px 10px 0;
-  height: 70%;
+  height: 80%;
   padding: 25px 75px;
   display: flex;
   flex-direction: column;

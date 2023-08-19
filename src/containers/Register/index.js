@@ -106,13 +106,13 @@ export function Register() {
           <ErroMessage>{errors.confirmPassword?.message}</ErroMessage>
 
           <Button type="submit" style={{ marginTop: 15, marginBottom: 15 }}>
-            Sign Up
+            Cadastrar
           </Button>
         </form>
         <SingInLink>
           Já possui conta?{' '}
           <Link style={{ color: 'white' }} to="/login">
-            Sign In
+            Entrar
           </Link>
         </SingInLink>
       </ContainerItens>

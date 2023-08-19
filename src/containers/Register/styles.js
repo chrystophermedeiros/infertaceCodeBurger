@@ -15,7 +15,7 @@ export const Container = styled.div`
 `
 
 export const RegisterImage = styled.img`
-  height: 80%;
+  height: 90%;
   @media (max-width: 994px) {
     display: none;
   }
@@ -24,7 +24,7 @@ export const RegisterImage = styled.img`
 export const ContainerItens = styled.div`
   background: black;
   border-radius: 0 10px 10px 0;
-  height: 80%;
+  height: 90%;
   padding: 2px 75px;
   display: flex;
   flex-direction: column;
@@ -53,7 +53,7 @@ export const ContainerItens = styled.div`
   }
 
   img {
-    height: 20%;
+    height: 15%;
     @media (max-width: 994px) {
       height: 10%;
     }
@@ -68,7 +68,7 @@ export const Label = styled.p`
   color: #ffffff;
 `
 export const Input = styled.input`
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   height: 38.32px;
   background: #ffffff;
   box-shadow: 3px 3px 10px rgba(74, 144, 226, 0.19);
