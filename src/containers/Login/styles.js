@@ -35,8 +35,8 @@ export const ContainerItens = styled.div`
   @media (max-width: 994px) {
     background: url('${LoginImg}');
     background-size: cover;
-    width: 100%;
-    height: 90%;
+    width: 95%;
+    padding: 25px 25px;
   }
 
   h1 {
