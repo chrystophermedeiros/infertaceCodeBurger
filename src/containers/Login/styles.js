@@ -49,24 +49,33 @@ export const ContainerItens = styled.div`
     display: flex;
     flex-direction: column;
   }
+
+  img {
+    height: 20%;
+    @media (max-width: 994px) {
+      height: 100%;
+    }
+  }
 `
 export const Label = styled.p`
   font-weight: 500;
   font-size: 12px;
   line-height: 14px;
   margin-bottom: 3px;
-
   color: #ffffff;
 `
 export const Input = styled.input`
   margin-bottom: 10px;
-  width: 100%;
   height: 38.32px;
   background: #ffffff;
   box-shadow: 3px 3px 10px rgba(74, 144, 226, 0.19);
   border-radius: 5px;
   border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
   padding-left: 10px;
+
+  @media (max-width: 994px) {
+    width: 100%;
+  }
 `
 
 export const SingInLink = styled.p`
