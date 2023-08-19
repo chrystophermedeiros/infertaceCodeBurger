@@ -3,7 +3,19 @@ import styled from 'styled-components'
 import Fundo from '../../assets/background.svg'
 import LoginImg from '../../assets/login-image-mobile.svg'
 
-export const Container = styled.div``
+export const Container = styled.div`
+  height: 100vh;
+  width: 100%;
+  background: url('${Fundo}');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  @media (max-width: 994px) {
+    height: 98vh;
+  }
+`
 
 export const LoginImage = styled.img`
   height: 70%;
