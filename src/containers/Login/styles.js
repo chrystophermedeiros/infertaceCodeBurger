@@ -16,6 +16,7 @@ export const Container = styled.div`
 
 export const LoginImage = styled.img`
   height: 70%;
+  overflow: hidden;
   @media (max-width: 994px) {
     display: none;
   }
@@ -29,6 +30,7 @@ export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
 
   @media (max-width: 994px) {
     background: url('${LoginImg}');
