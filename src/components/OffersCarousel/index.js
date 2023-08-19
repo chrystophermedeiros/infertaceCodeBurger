@@ -26,7 +26,7 @@ export function OffersCarousel() {
   }, [])
 
   const breakPoints = [
-    { width: 1, itemsToShow: 1 },
+    { width: 1, itemsToShow: 2 },
     { width: 400, itemsToShow: 2 },
     { width: 600, itemsToShow: 3 },
     { width: 900, itemsToShow: 4 },
@@ -37,7 +37,7 @@ export function OffersCarousel() {
       <h1>Ofertas</h1>
       <Carousel
         itemsToShow={4}
-        style={{ width: '90%' }}
+        style={{ width: '95%' }}
         breakPoints={breakPoints}
       >
         {offers &&
