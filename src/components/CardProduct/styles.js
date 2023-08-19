@@ -6,12 +6,15 @@ export const Container = styled.div`
   padding: 16px;
   border: 2px solid #9758a6;
   border-radius: 40px;
+  width: 400px;
+  @media (max-width: 700px) {
+    width: 300px;
+  }
 
   div {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 180px;
     button {
       width: 80%;
     }
