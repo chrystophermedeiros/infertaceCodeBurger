@@ -78,7 +78,7 @@ export const Input = styled.input`
   color: #ffffff;
   @media (max-width: 994px) {
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 0, 0, 0.5);
   }
 `
 

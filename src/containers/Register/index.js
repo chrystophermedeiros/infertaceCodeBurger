@@ -1,7 +1,7 @@
 import { yupResolver } from '@hookform/resolvers/yup'
 import React from 'react'
 import { useForm } from 'react-hook-form'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
 
@@ -31,6 +31,7 @@ export function Register() {
       .required('A senha é obrigatória')
       .oneOf([Yup.ref('password')], ' As senhas devem ser iguais')
   })
+  const navigate = useNavigate()
 
   const {
     register,
@@ -55,6 +56,7 @@ export function Register() {
       )
       if (status === 201 || status === 200) {
         toast.success('cadastro realizado com sucesso!', {})
+        navigate('/login')
       } else if (status === 409) {
         toast.error('E-mail já cadastrado! Faça login pra continuar', {})
       } else {

@@ -70,13 +70,15 @@ export const Label = styled.p`
 export const Input = styled.input`
   margin-bottom: 5px;
   height: 38.32px;
-  background: #ffffff;
+  background: transparent;
   box-shadow: 3px 3px 10px rgba(74, 144, 226, 0.19);
   border-radius: 5px;
-  border: ${props => (props.error ? '2px solid #CC1717' : 'none')};
+  border: ${props => (props.error ? '2px solid #CC1717' : '2px solid #9758a6')};
   padding-left: 10px;
+  color: #ffffff;
   @media (max-width: 994px) {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
   }
 `
 
