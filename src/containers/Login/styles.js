@@ -6,22 +6,23 @@ import LoginImg from '../../assets/login-image-mobile.svg'
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
-  background: url('${Fundo}');
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  section {
+    height: 100%;
+    background: url('${Fundo}');
+    background-color: aqua;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
 `
 
 export const LoginImage = styled.img`
   height: 70%;
-  overflow: hidden;
+
   @media (max-width: 994px) {
     display: none;
-    height: 0;
-    margin: 0;
-    padding: 0;
   }
 `
 

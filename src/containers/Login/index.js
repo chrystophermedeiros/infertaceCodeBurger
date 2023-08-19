@@ -65,39 +65,38 @@ export function Login() {
 
   return (
     <Container>
-      <LoginImage src={LoginImg} alt="Imagem de login" />
-      <ContainerItens>
-        <img src={Logo} />
-        <h1>Login</h1>
-
-        <form noValidate onSubmit={handleSubmit(onSubmit)}>
-          <Label>Email</Label>
-          <Input
-            type="email"
-            {...register('email')}
-            error={errors.email?.message}
-          />
-          <ErroMessage>{errors.email?.message}</ErroMessage>
-
-          <Label>Senha</Label>
-          <Input
-            type="password"
-            {...register('password')}
-            error={errors.password?.message}
-          />
-          <ErroMessage>{errors.password?.message}</ErroMessage>
-
-          <Button type="submit" style={{ marginTop: 55, marginBottom: 55 }}>
-            Sign In
-          </Button>
-        </form>
-        <SingInLink>
-          Não possui conta?{' '}
-          <Link style={{ color: 'white' }} to="/cadastro">
-            Sign Up
-          </Link>
-        </SingInLink>
-      </ContainerItens>
+      <section>
+        <LoginImage src={LoginImg} alt="Imagem de login" />
+        <ContainerItens>
+          <img src={Logo} />
+          <h1>Login</h1>
+          <form noValidate onSubmit={handleSubmit(onSubmit)}>
+            <Label>Email</Label>
+            <Input
+              type="email"
+              {...register('email')}
+              error={errors.email?.message}
+            />
+            <ErroMessage>{errors.email?.message}</ErroMessage>
+            <Label>Senha</Label>
+            <Input
+              type="password"
+              {...register('password')}
+              error={errors.password?.message}
+            />
+            <ErroMessage>{errors.password?.message}</ErroMessage>
+            <Button type="submit" style={{ marginTop: 55, marginBottom: 55 }}>
+              Sign In
+            </Button>
+          </form>
+          <SingInLink>
+            Não possui conta?{' '}
+            <Link style={{ color: 'white' }} to="/cadastro">
+              Sign Up
+            </Link>
+          </SingInLink>
+        </ContainerItens>
+      </section>
     </Container>
   )
 }
