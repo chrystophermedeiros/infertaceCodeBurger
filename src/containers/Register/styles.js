@@ -33,7 +33,7 @@ export const ContainerItens = styled.div`
     background: url('${RegisterImg}');
     background-size: cover;
     width: 95%;
-    height: 70dvh;
+    height: 90dvh;
     padding: 25px 25px;
   }
 
