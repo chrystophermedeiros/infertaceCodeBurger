@@ -42,6 +42,10 @@ export const Image = styled.img`
   height: 200px;
   width: 200px;
   border-radius: 10px;
+  @media (max-width: 994px) {
+    width: 150px;
+    height: 150px;
+  }
 `
 
 export const Button = styled(Link)`
