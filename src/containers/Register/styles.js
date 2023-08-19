@@ -18,10 +18,6 @@ export const RegisterImage = styled.img`
   height: 80%;
   @media (max-width: 994px) {
     display: none;
-    height: 0;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
   }
 `
 
@@ -37,6 +33,7 @@ export const ContainerItens = styled.div`
     background: url('${RegisterImg}');
     background-size: cover;
     width: 95%;
+    height: 70%;
     padding: 25px 25px;
   }
 

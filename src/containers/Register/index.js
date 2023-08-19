@@ -111,7 +111,7 @@ export function Register() {
         </form>
         <SingInLink>
           Já possui conta?{' '}
-          <Link style={{ color: 'black' }} to="/login">
+          <Link style={{ color: 'white' }} to="/login">
             Sign In
           </Link>
         </SingInLink>
