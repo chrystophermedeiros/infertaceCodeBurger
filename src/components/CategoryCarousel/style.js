@@ -1,13 +1,16 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 export const Container = styled.div`
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px 0;
   gap: 35px;
-  padding: 35px 0;
   width: 100%;
+
+  h1 {
+    color: #ffffff;
+  }
 
   .rec.rec-arrow {
     border-radius: 0;
@@ -26,8 +29,6 @@ export const Container = styled.div`
     background-color: #bebebf;
   }
 `
-
-export const CategoryImg = styled.img``
 
 export const ContainerItens = styled.div`
   display: flex;

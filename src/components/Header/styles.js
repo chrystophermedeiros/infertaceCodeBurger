@@ -6,6 +6,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   flex-direction: row;
+  padding: 0 10px;
   justify-content: space-around;
   p {
     color: #ffff;
@@ -14,13 +15,13 @@ export const Container = styled.div`
 
 export const ContainerLeft = styled.div`
   display: flex;
-  gap: 30px;
+  gap: 20px;
 `
 
 export const ContainerRigth = styled.div`
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 20px;
 `
 export const ContainerText = styled.div`
   p {

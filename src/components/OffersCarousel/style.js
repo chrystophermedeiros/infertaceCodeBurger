@@ -1,13 +1,17 @@
 import styled from 'styled-components'
 
 export const Container = styled.div`
-  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 35px;
   padding: 35px 0;
   width: 100%;
+  background-color: #0d0d10;
+
+  h1 {
+    color: #ffffff;
+  }
 
   .rec.rec-arrow {
     border-radius: 0;
@@ -15,6 +19,7 @@ export const Container = styled.div`
     color: #ffffff;
     border-radius: 50px;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: 10px;
   }
   .rec.rec-arrow:hover {
     border: 2px solid #9758a6;
@@ -26,8 +31,6 @@ export const Container = styled.div`
     background-color: #bebebf;
   }
 `
-
-export const CategoryImg = styled.img``
 
 export const ContainerItens = styled.div`
   display: flex;

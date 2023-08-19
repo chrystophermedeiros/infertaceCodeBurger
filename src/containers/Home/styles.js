@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   height: 100dvh;
   width: 100%;
-  background-color: black;
+  background-color: #0d0d10;
 `
 
 export const HomeImg = styled.img`

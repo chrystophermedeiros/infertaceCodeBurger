@@ -38,7 +38,7 @@ export function Header() {
           onClick={() => handleClick('/produtos')}
           isActive={pathname.includes('produtos')}
         >
-          Ver produtos
+          Produtos
         </PageLink>
       </ContainerLeft>
 
