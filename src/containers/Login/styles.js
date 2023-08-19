@@ -13,7 +13,7 @@ export const Container = styled.div`
   align-items: center;
   overflow: hidden;
   @media (max-width: 994px) {
-    height: 98vh;
+    max-height: max-content;
   }
 `
 
