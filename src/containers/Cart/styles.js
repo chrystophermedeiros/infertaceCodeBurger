@@ -6,8 +6,7 @@ export const Container = styled.div`
 `
 
 export const CartImg = styled.img`
-  width: 100vw; /* 100% da largura da tela */
-  height: 50vh;
+  width: 100%; /* 100% da largura da tela */
   object-fit: cover;
   object-position: bottom;
 `
