@@ -4,7 +4,7 @@ import Fundo from '../../assets/background.svg'
 import RegisterImg from '../../assets/register-image.svg'
 
 export const Container = styled.div`
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
   background: url('${Fundo}');
   background-size: cover;
@@ -33,7 +33,7 @@ export const ContainerItens = styled.div`
     background: url('${RegisterImg}');
     background-size: cover;
     width: 95%;
-    height: 70%;
+    height: 70dvh;
     padding: 25px 25px;
   }
 

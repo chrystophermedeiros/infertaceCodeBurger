@@ -105,7 +105,7 @@ export function Register() {
           />
           <ErroMessage>{errors.confirmPassword?.message}</ErroMessage>
 
-          <Button type="submit" style={{ marginTop: 25, marginBottom: 25 }}>
+          <Button type="submit" style={{ marginTop: 15, marginBottom: 15 }}>
             Sign Up
           </Button>
         </form>

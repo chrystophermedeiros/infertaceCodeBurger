@@ -36,6 +36,7 @@ export const ContainerItens = styled.div`
     background: url('${LoginImg}');
     background-size: cover;
     height: 70dvh;
+    width: 95%;
     padding: 25px 25px;
   }
 
