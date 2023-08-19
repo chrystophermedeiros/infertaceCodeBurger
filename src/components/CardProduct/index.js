@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import React from 'react'
-import { useNavigate } from 'react-router-dom'
+import { toast } from 'react-toastify'
 
 import { Button } from '../'
 import { useCart } from '../../hooks/CartContext'
@@ -8,7 +8,7 @@ import { Container, Image, Price, Name } from './styles'
 
 export function CardProduct({ product }) {
   const { putProductsInCart } = useCart(product)
-  const navigate = useNavigate()
+
   return (
     <Container>
       <Image src={product.url} alt="imagem do produto" />
@@ -18,7 +18,7 @@ export function CardProduct({ product }) {
         <Button
           onClick={() => {
             putProductsInCart(product)
-            navigate('/carrinho')
+            toast.success('adcionado com sucesso!', {})
           }}
         >
           Adcionar

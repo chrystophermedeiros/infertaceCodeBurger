@@ -2,11 +2,15 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   display: flex;
+  justify-content: center;
   gap: 12px;
   padding: 16px;
   border: 2px solid #9758a6;
   border-radius: 40px;
-  width: 350px;
+  width: 400px;
+  @media (max-width: 700px) {
+    width: 300px;
+  }
 
   div {
     display: flex;
