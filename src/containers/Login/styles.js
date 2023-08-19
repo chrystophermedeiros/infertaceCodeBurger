@@ -6,11 +6,15 @@ import LoginImg from '../../assets/login-image-mobile.svg'
 export const Container = styled.div`
   height: 100vh;
   width: 100vw;
+  padding: 100px;
   background: url('${Fundo}');
   background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 994px) {
+    padding: 100px 0;
+  }
 `
 
 export const LoginImage = styled.img`
