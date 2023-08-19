@@ -17,7 +17,7 @@ export const Container = styled.div`
 export const LoginImage = styled.img`
   height: 80%;
 
-  @media (max-width: 700px) {
+  @media (max-width: 994px) {
     display: none;
   }
 `
@@ -30,9 +30,7 @@ export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow: hidden;
-
-  @media (max-width: 700px) {
+  @media (max-width: 994px) {
     background: url('${LoginImg}');
     background-size: cover;
     height: 80dvh;
@@ -57,7 +55,7 @@ export const ContainerItens = styled.div`
 
   img {
     height: 20%;
-    @media (max-width: 700px) {
+    @media (max-width: 994px) {
       height: 100%;
     }
   }
@@ -78,8 +76,9 @@ export const Input = styled.input`
   border: ${props => (props.error ? '2px solid #CC1717' : '2px solid #9758a6')};
   padding-left: 10px;
   color: #ffffff;
-  @media (max-width: 700px) {
+  @media (max-width: 994px) {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `
 

@@ -7,6 +7,7 @@ export const Container = styled.div`
   align-items: center;
   gap: 35px;
   padding: 35px 0;
+  width: 100%;
 
   .rec.rec-arrow {
     border-radius: 0;
