@@ -44,11 +44,8 @@ export const CategoryButton = styled.button`
 export const ProductdContainer = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
   gap: 10px;
-  padding: 40px;
+  padding: 20px;
   justify-items: center;
   background-color: #0d0d10;
 `
