@@ -10,6 +10,10 @@ export const ProductImg = styled.img`
   width: 100%;
   object-fit: cover;
   object-position: bottom;
+
+  @media (min-width: 900px) {
+    height: 35%;
+  }
 `
 
 export const CategoriesMenu = styled.div`
