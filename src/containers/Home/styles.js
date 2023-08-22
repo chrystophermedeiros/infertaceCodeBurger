@@ -8,7 +8,6 @@ export const Container = styled.div`
 `
 
 export const HomeImg = styled.img`
-  height: 35%;
   width: 100%;
   object-fit: cover;
   object-position: center;
