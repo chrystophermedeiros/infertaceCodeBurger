@@ -10,7 +10,6 @@ export const Container = styled.div`
   padding: 0 10px;
   justify-content: space-around;
   position: fixed;
-  z-index: 3;
   p {
     color: #ffff;
   }

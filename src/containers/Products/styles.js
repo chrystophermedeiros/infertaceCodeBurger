@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: black;
   height: 100dvh;
-  z-index: 0;
+  padding-top: 72px;
 `
 
 export const ProductImg = styled.img`

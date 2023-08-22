@@ -2,9 +2,8 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: #0d0d10;
-  width: 90%;
+  width: 96%;
   border-radius: 20px;
-  padding: 10px;
   display: flex;
   flex-direction: column-reverse;
   justify-content: space-between;
@@ -36,27 +35,41 @@ export const CartItens = styled.div`
 export const Header = styled.div`
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  padding: 10px;
   border-bottom: 1px solid #9758a6;
-  margin-bottom: 10px;
   text-align: center;
+  background-color: black;
+  padding: 10px;
   p {
     font-size: 20px;
     color: #9758a6;
+    @media (max-width: 500px) {
+      font-size: 16px;
+    }
   }
   align-items: center;
 `
 
 export const Body = styled.div`
+  position: relative;
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   border-bottom: 1px solid #9758a6;
   margin-bottom: 10px;
   text-align: center;
   align-items: center;
+
+  @media (max-width: 500px) {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
   .quantity-container {
     display: flex;
-    gap: 20px;
+    gap: 10px;
     align-items: center;
     justify-content: center;
 
