@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   background-color: black;
-  min-height: calc(100vh - 72px);
+  height: 100dvh;
 `
 
 export const ProductImg = styled.img`
@@ -17,10 +17,9 @@ export const CategoriesMenu = styled.div`
   gap: 50px;
   margin-top: 20px;
   @media (max-width: 700px) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 10px;
-    overflow: hidden;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin: 0 2%;
   }
 `
 
@@ -43,12 +42,9 @@ export const CategoryButton = styled.button`
 
 export const ProductdContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  @media (max-width: 700px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-  gap: 10px;
-  padding: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 5px;
+  padding: 10px;
   justify-items: center;
   background-color: #0d0d10;
 `

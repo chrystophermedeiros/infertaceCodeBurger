@@ -7,10 +7,12 @@ export const Container = styled.div`
   gap: 35px;
   padding: 35px 0;
   width: 100%;
-  background-color: #0d0d10;
 
   h1 {
     color: #ffffff;
+    &:hover {
+      color: #9758a6;
+    }
   }
 
   .rec.rec-arrow {

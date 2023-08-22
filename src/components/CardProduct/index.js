@@ -4,7 +4,7 @@ import { toast } from 'react-toastify'
 
 import { Button } from '../'
 import { useCart } from '../../hooks/CartContext'
-import { Container, Image, Price, Name } from './styles'
+import { Container, ContainerItens, Image, Price, Name } from './styles'
 
 export function CardProduct({ product }) {
   const { putProductsInCart } = useCart(product)
@@ -12,7 +12,7 @@ export function CardProduct({ product }) {
   return (
     <Container>
       <Image src={product.url} alt="imagem do produto" />
-      <div>
+      <ContainerItens>
         <Name>{product.name}</Name>
         <Price>{product.formatedPrice}</Price>
         <Button
@@ -23,7 +23,7 @@ export function CardProduct({ product }) {
         >
           Adcionar
         </Button>
-      </div>
+      </ContainerItens>
     </Container>
   )
 }

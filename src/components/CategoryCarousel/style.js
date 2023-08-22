@@ -10,6 +10,9 @@ export const Container = styled.div`
 
   h1 {
     color: #ffffff;
+    &:hover {
+      color: #9758a6;
+    }
   }
 
   .rec.rec-arrow {

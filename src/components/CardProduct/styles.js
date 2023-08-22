@@ -7,19 +7,16 @@ export const Container = styled.div`
   padding: 16px;
   border: 2px solid #9758a6;
   border-radius: 40px;
-  width: 400px;
-  @media (max-width: 700px) {
-    width: 300px;
-  }
+  width: 350px;
+`
 
-  div {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 100%;
-    button {
-      width: 80%;
-    }
+export const ContainerItens = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  button {
+    width: 80%;
   }
 `
 
@@ -28,7 +25,7 @@ export const Image = styled.img`
   height: 180px;
   border-radius: 10px;
   @media (max-width: 700px) {
-    width: 120px;
+    width: 150px;
     height: 120px;
   }
 `

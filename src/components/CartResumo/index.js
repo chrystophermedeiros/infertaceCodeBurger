@@ -56,7 +56,7 @@ export function CartResumo() {
         </div>
         <Button
           onClick={submitOrder}
-          style={{ width: '80%', marginTop: '30px' }}
+          style={{ width: '50%', marginTop: '30px' }}
         >
           Finalizar pedido
         </Button>
