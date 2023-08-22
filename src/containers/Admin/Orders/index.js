@@ -82,7 +82,7 @@ function Orders() {
           ))}
       </Menu>
       <TableContainer component={Paper}>
-        <Table aria-label="collapsible table">
+        <Table sx={{ minWidth: 250 }} aria-label="simple table">
           <TableHead>
             <TableRow>
               <TableCell />
