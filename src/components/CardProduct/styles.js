@@ -7,7 +7,7 @@ export const Container = styled.div`
   padding: 16px;
   border: 2px solid #9758a6;
   border-radius: 40px;
-  width: 350px;
+  width: 330px;
 `
 
 export const ContainerItens = styled.div`

@@ -10,8 +10,6 @@ export default createGlobalStyle`
             font-style: normal;
             outline: none;
         }
-     
-
 
         :root {
         --color-bg: #1f1f38;

@@ -36,6 +36,7 @@ export function OffersCarousel() {
     <Container>
       <h1>Ofertas</h1>
       <Carousel
+        className="teste"
         itemsToShow={4}
         style={{ width: '95%' }}
         breakPoints={breakPoints}

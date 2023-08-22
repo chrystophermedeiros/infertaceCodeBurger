@@ -42,7 +42,7 @@ export const CategoryButton = styled.button`
 
 export const ProductdContainer = styled.div`
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   gap: 5px;
   padding: 10px;
   justify-items: center;
