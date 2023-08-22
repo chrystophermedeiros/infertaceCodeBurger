@@ -26,7 +26,7 @@ export const Image = styled.img`
   border-radius: 10px;
   @media (max-width: 700px) {
     width: 150px;
-    height: 120px;
+    height: 150px;
   }
 `
 export const Name = styled.p`
