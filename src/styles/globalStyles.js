@@ -11,6 +11,7 @@ export default createGlobalStyle`
             outline: none;
         }
 
+
         :root {
         --color-bg: #1f1f38;
         --color-bg-variant:#2c2c6c;
