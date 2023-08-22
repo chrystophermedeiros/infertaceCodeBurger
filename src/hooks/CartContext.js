@@ -28,6 +28,10 @@ export const CartProvider = ({ children }) => {
     }
     updatelocalStorage(newCartProducts)
   }
+  const limparCarrinho = () => {
+    setCartProducts([]) // Define o carrinho como um array vazio
+    localStorage.removeItem('codeburger:cartInfo') // Remove os dados do carrinho do localStorage
+  }
 
   const deleteProducts = async productId => {
     const newCart = cartProducts.filter(product => product.id !== productId)
@@ -81,7 +85,8 @@ export const CartProvider = ({ children }) => {
         cartProducts,
         increaseProducts,
         decreaseProducts,
-        deleteProducts
+        deleteProducts,
+        limparCarrinho
       }}
     >
       {children}

@@ -10,6 +10,15 @@ export const Container = styled.div`
     color: white;
     margin: 50px 15px;
   }
+
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 0;
+
+    hr {
+      margin: 0;
+    }
+  }
 `
 
 export const ItemContainer = styled.div`
@@ -18,6 +27,10 @@ export const ItemContainer = styled.div`
   display: flex;
   align-items: center;
   background: ${props => (props.isActive ? '#DC7BEF' : 'none')};
+  @media (max-width: 700px) {
+    width: 100%;
+    padding: 0;
+  }
 `
 
 export const LinkList = styled(Link)`

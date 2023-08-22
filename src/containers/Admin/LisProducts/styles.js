@@ -10,6 +10,10 @@ export const Container = styled.div`
   .MuiTableCell-root {
     color: white;
   }
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
 `
 
 export const ProductImg = styled.img`
