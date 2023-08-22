@@ -3,10 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background-color: black;
   height: 100dvh;
+  z-index: 0;
 `
 
 export const ProductImg = styled.img`
-  width: 100%; /* 100% da largura da tela */
+  width: 100%;
   object-fit: cover;
   object-position: bottom;
 `

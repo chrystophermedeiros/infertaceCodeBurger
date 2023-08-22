@@ -7,7 +7,7 @@ import { Container, HomeImg } from './styles'
 export function Home() {
   return (
     <Container>
-      {/* <HomeImg src={HomeLogo} alt="HomeLogoBurger" /> */}
+      <HomeImg src={HomeLogo} alt="HomeLogoBurger" />
       <CategoryCarousel />
       <OffersCarousel />
     </Container>

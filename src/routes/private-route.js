@@ -15,7 +15,7 @@ function PrivateRoute({ element, isAdmin }) {
   }
   return (
     <div>
-      {!isAdmin && <div />}
+      {!isAdmin && <Header />}
       {element}
     </div>
   )
