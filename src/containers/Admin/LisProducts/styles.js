@@ -4,6 +4,7 @@ import styled from 'styled-components'
 export const Container = styled.div`
   background: black;
   width: 80vw;
+
   .MuiTable-root {
     background-color: black;
   }
@@ -13,6 +14,7 @@ export const Container = styled.div`
 
   @media (max-width: 700px) {
     width: 100%;
+    overflow: scroll;
   }
 `
 

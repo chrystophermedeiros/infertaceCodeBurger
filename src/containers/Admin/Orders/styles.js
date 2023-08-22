@@ -15,6 +15,10 @@ export const Menu = styled.div`
   gap: 50px;
   justify-content: center;
   margin: 20px 0;
+  @media (max-width: 700px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `
 export const LinkMenu = styled.a`
   cursor: pointer;
