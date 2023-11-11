@@ -3,6 +3,7 @@ import { useLocation } from 'react-router-dom'
 
 import { SideMenuAdmin } from '../../components'
 import paths from '../../constants/paths'
+import EditCategory from './EditCategory'
 import EditProduct from './EditProduct'
 import ListProduct from './LisProducts'
 import NewCategory from './NewCategory'
@@ -21,6 +22,7 @@ export function Admin() {
         {location.pathname === paths.NewProdcut && <NewProduct />}
         {location.pathname === paths.EditProducts && <EditProduct />}
         {location.pathname === paths.NewCategory && <NewCategory />}
+        {location.pathname === paths.NewCategory && <EditCategory />}
       </ContainerItens>
     </Container>
   )
