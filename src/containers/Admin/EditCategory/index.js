@@ -80,7 +80,7 @@ function EditCategory() {
           <ErroMessage>{errors.file?.message}</ErroMessage>
         </div>
 
-        <ButtonAdcionar>Adcionar categoria</ButtonAdcionar>
+        <ButtonAdcionar>Editar categoria</ButtonAdcionar>
       </form>
     </Container>
   )
