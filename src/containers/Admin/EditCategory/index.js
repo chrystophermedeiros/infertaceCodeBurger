@@ -1,8 +1,8 @@
 import { yupResolver } from '@hookform/resolvers/yup'
 import CloudUploadIcon from '@mui/icons-material/CloudUpload'
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useForm } from 'react-hook-form'
-import { useNavigate, useLocation } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
 
@@ -13,15 +13,20 @@ import { Container, Label, Input, LabelUoload, ButtonAdcionar } from './styles'
 
 function EditCategory() {
   const [fileName, setFileName] = useState(null)
-  const [categories, setCategories] = useState([])
   const navigate = useNavigate()
-  const location = useLocation()
-  const {
-    state: { product }
-  } = location
 
   const schema = Yup.object().shape({
-    name: Yup.string().required('Digite o nome do produto')
+    name: Yup.string().required('Digite o nome do produto'),
+    file: Yup.mixed()
+      .test('requerid', 'Carregue a imagem', value => {
+        return value?.length > 0
+      })
+      .test('filesize', 'Carregue arquivos de até 2mb', value => {
+        return value[0]?.size <= 2000000
+      })
+      .test('type', 'Carregue apenas arquivos JPEG', value => {
+        return value[0]?.type === 'image/jpeg' || value[0]?.type === 'image/png'
+      })
   })
 
   const {
@@ -35,40 +40,23 @@ function EditCategory() {
     productDataFormDat.append('name', data.name)
     productDataFormDat.append('file', data.file[0])
 
-    await toast.promise(
-      api.put(`categories/${categories.id}`, productDataFormDat),
-      {
-        pending: 'Editando novo produto...',
-        error: 'Falha ao editar o produto',
-        success: 'Produto editado com sucesso'
-      }
-    )
+    await toast.promise(api.put('categories', productDataFormDat), {
+      pending: 'Editando nova categoria...',
+      error: 'Falha ao editar categoria',
+      success: 'Categoria editada com sucesso'
+    })
 
     setTimeout(() => {
-      navigate(paths.Products)
+      navigate(paths.EditCategory)
     }, 2000)
   }
-
-  useEffect(() => {
-    async function loadCategories() {
-      const { data } = await api.get('categories')
-
-      setCategories(data)
-    }
-
-    loadCategories()
-  }, [])
 
   return (
     <Container>
       <form noValidate onSubmit={handleSubmit(onSubmit)}>
         <div>
           <Label>Nome</Label>
-          <Input
-            type="text"
-            {...register('name')}
-            defaultValue={product.name}
-          />
+          <Input type="text" {...register('name')} />
           <ErroMessage>{errors.name?.message}</ErroMessage>
         </div>
 
@@ -77,7 +65,7 @@ function EditCategory() {
             {fileName || (
               <>
                 <CloudUploadIcon />
-                Carregue a imagem do produto
+                Carregue a imagem da categoria
               </>
             )}
             <input
@@ -92,7 +80,7 @@ function EditCategory() {
           <ErroMessage>{errors.file?.message}</ErroMessage>
         </div>
 
-        <ButtonAdcionar>Editar categoria</ButtonAdcionar>
+        <ButtonAdcionar>Adcionar categoria</ButtonAdcionar>
       </form>
     </Container>
   )

@@ -69,13 +69,3 @@ export const SelectCategories = styled(Select)`
     border: 1px solid white;
   }
 `
-
-export const ContainerInpput = styled.div`
-  display: flex;
-  gap: 10px;
-  align-items: baseline;
-
-  input {
-    cursor: pointer;
-  }
-`
