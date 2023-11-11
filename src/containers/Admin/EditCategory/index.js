@@ -16,7 +16,7 @@ function EditCategory() {
   const navigate = useNavigate()
 
   const schema = Yup.object().shape({
-    name: Yup.string().required('Digite o nome do produto'),
+    name: Yup.string().required('Digite o nome da categoria'),
     file: Yup.mixed()
       .test('requerid', 'Carregue a imagem', value => {
         return value?.length > 0
