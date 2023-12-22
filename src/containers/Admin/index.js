@@ -22,7 +22,7 @@ export function Admin() {
         {location.pathname === paths.NewProdcut && <NewProduct />}
         {location.pathname === paths.EditProducts && <EditProduct />}
         {location.pathname === paths.NewCategory && <NewCategory />}
-        {location.pathname === paths.NewCategory && <EditCategory />}
+        {location.pathname === paths.EditCategory && <EditCategory />}
       </ContainerItens>
     </Container>
   )
